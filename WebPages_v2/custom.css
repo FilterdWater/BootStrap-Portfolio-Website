@@ -1,0 +1,53 @@
+.pill-image {
+    border-radius: 50px; /* Adjust the value to control the pill shape */
+    object-fit: cover;
+    width: 200px; /* Adjust the width as desired */
+    height: 300px; /* Adjust the height as desired */
+  }
+  
+  .rounded-pill-image {
+    border-radius: 50%/100px 100px 100px 100px; /* Creates rounded top and bottom */
+  }
+  .custom-background {
+    position: relative;
+    z-index: 0;
+  }
+
+  .img-500x500{
+    width: 500px;
+    height: 500px;
+  }
+
+
+
+
+
+
+
+
+
+  .custom-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../gifs/1LF8.gif'); /* Replace with the URL of your GIF image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1; /* Adjust the opacity as desired */
+    z-index: -1;
+    border-radius: 25px; /* Adjust the value to change the roundness */
+   /* animation: backgroundAnimation 5s infinite; /* Adjust the animation duration and iteration as desired  
+   infinte zorgt ervoor dat hij loopt
+   @keyframes om dingen aangepast the hebben tijdens de animatie*/
+  }
+  
+  /*@keyframes backgroundAnimation {
+    0% { opacity: 0.1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 0.5; }
+  }
+  */
