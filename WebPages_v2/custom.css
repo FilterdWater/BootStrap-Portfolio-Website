@@ -28,6 +28,9 @@
     height: auto;
   }
 
+  .text-style-ubuntu{
+    font-family: 'Ubuntu', sans-serif;
+  }
 
 
 
@@ -43,7 +46,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../gifs/1LF8.gif'); /* Replace with the URL of your GIF image */
+    background-image: url('../jpegs/simple-gradient.jpg'); /* Replace with the URL of your GIF image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
