@@ -18,6 +18,16 @@
     height: 500px;
   }
 
+  .img-responsive-small{
+    max-width: 5em;
+    height: auto;
+  }
+  
+  .img-responsive-medium-small{
+    max-width: 7em;
+    height: auto;
+  }
+
 
 
 
