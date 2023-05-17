@@ -32,7 +32,14 @@
     font-family: 'Ubuntu', sans-serif;
   }
 
+  
 
+  .project-img{
+    transition: all 0.3s ease;
+  }
+  .project-img:hover{
+    transform: scale(1.05);
+  }
 
 
 
@@ -53,14 +60,55 @@
     opacity: 1; /* Adjust the opacity as desired */
     z-index: -1;
     border-radius: 25px; /* Adjust the value to change the roundness */
-   /* animation: backgroundAnimation 5s infinite; /* Adjust the animation duration and iteration as desired  
-   infinte zorgt ervoor dat hij loopt
-   @keyframes om dingen aangepast the hebben tijdens de animatie*/
+  }
+
+  
+  .project-banner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
   }
   
-  /*@keyframes backgroundAnimation {
-    0% { opacity: 0.1; }
-    50% { opacity: 0.8; }
-    100% { opacity: 0.5; }
+  
+  .project-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../jpegs/Banner-image-projecten-bootstrap-portfolio-2.jpg'); /* Replace with the URL of your GIF image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    z-index: -1;
+    border-radius: 25px;
   }
-  */
+
+  .About-banner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+  .About-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../jpegs/Lars-setup.jpg'); /* Replace with the URL of your GIF image */
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    z-index: -1;
+    border-radius: 25px;
+  }

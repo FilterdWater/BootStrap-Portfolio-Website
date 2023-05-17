@@ -1,3 +1,10 @@
+<!--Bootstrap portfolio project-->
+<!--
+  Deze portfolio site is gemaakt voor school en is een project van 2 weken 
+  Deze site word later vervangen door een site die ik maak in de zomer vakantie als mijn "echte portfolio"
+  De opdracht is bedoeld om te leren hoe je een css framework moet gebruiken
+-->
+<!--Bootstrap portfolio project-->
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
  <head>
@@ -42,12 +49,12 @@
 <div class="container d-flex w-100 h-100 p-5 mx-auto flex-column">
   <header class="mb-5">
     <div>
-      <h1 class="float-md-start mb-0"><i class="bi bi-code-slash"></i></h1>
+      <h1 class="float-md-start mb-0"><a class="bi bi-code-slash" href="index.html" style="color: white;"></a></h1>
       <nav class="nav nav-masthead justify-content-center float-md-end">
         <a class="nav-link fw-bold py-1 px-10 active" aria-current="page" href="">Home</a>
         <a class="nav-link fw-bold py-1 px-10" href="projects.html">Projects</a>
-        <a class="nav-link fw-bold py-1 px-10" href="#">About</a>
-        <a class="nav-link fw-bold py-1 px-10" href="#">Contact</a>
+        <a class="nav-link fw-bold py-1 px-10" href="AboutMe.html">About</a>
+        <a class="nav-link fw-bold py-1 px-10" href="Contact.html">Contact</a>
       </nav>
     </div>
   </header>
@@ -67,9 +74,9 @@
 
 
   <main class="px-3 vh-100">
-    <h1 class="text-style-ubuntu">Hey, welcome op mijn site <i class="bi bi-emoji-smile-fill" style="font-size: 0.8em;"></i></h1>
+    <h1 class="text-style-ubuntu">Hey, <i class="text-warning">welcome</i> op mijn site <i class="bi bi-emoji-smile-fill" style="font-size: 0.8em;"></i></h1>
     <p class="lead p-3">Lars van Holland. Een web developer in opleiding.</p>
-    <p class="lead p-3"></p>
+    <p class="lead p-4"></p>
 
     <div class="p-5 mb-5 rounded-4 custom-background">
         <div class="container-fluid py-5">
@@ -78,13 +85,13 @@
             <div class="container">
               <div class="row">
                 <div class="col d-flex justify-content-center">
-                  <img src="../jpegs/Lars-van-Holland.jpg" class="pill-image" alt="Your Image">
+                  <img src="../jpegs/Lars-van-Holland.jpg" class="pill-image project-img" alt="Your Image">
                 </div>
               </div>
             </div>
           </p>
-          <a class="btn btn-outline-warning" href="#" role="button">About</a>
-        </div>
+          <a class="btn btn-outline-warning" px-4 href="AboutMe.html" role="button">Over mij</a>
+          </div>
       </div>
       <!--Dit ben ik-->
 
@@ -95,14 +102,13 @@
 
 
       <div class="px-4 py-5 my-5 text-center">
-        <i class="bi bi-safe" style="font-size: 4rem;"></i>
-
-        <h1 class="display-5 fw-bold text-body-emphasis text-style-ubuntu">Projecten</h1>
+        <div class="p-5 mb-3 rounded-2 project-banner"></div>
+        <h1 class=" p-2 display-5 fw-bold text-body-emphasis text-style-ubuntu">Projecten</h1>
         <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+          <p class="lead mb-4">Alle projecten die ik heb gemaakt in leerjaar-1 van Technova. Deze projecten zijn van de richtingen App, Web en Game. Gemaakt met of Unity, C# en HTML, CSS, JavaScript.</p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+            <a class="btn btn-outline-warning btn-lg" px-4 href="projects.html" role="button">Bekijk ze</a>
+
           </div>
         </div>
       </div>
@@ -119,23 +125,26 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
 
-          <div class="col-lg-6">
+          <div class="py-5 col-lg-6">
             <img src="../SVG/logo.svg">
             <h2 class="fw-normal text-style-ubuntu">Studie</h2>
             <p>Ik ben sinds 2022 student bij technova en volg de opleiding SOFTWARE DEVELOPER (BOL) - EDE, Als richting heb ik web gekozen.</p>
-            <p><a class="btn btn-secondary" href="https://www.technovacollege.nl/opleidingen/software-developer-bol-ede" target="_blank">Bekijk de opleiding die ik volg &raquo;</a></p>
+            <div class="container">
+            <a class="btn btn-outline-warning px-4" href="https://www.technovacollege.nl/opleidingen/software-developer-bol-ede" target="_blank" role="button">Bekijk de opleiding die ik volg</a>
+            </div>
             </div>
 
-          <div class="col-lg-6">
-            <img src="../SVG/Motivated-2color-v2.svg" style="max-width: 160px;"> <!--svg veels te groot kweet niet hoe ik hem anders goed laat scalen-->
+          <div class="py-5 col-lg-6">
+            <img src="../SVG/Motivated-2color-v2.svg" style="max-width: 137px;"> <!--svg veels te groot kweet niet hoe ik hem anders goed laat scalen-->
             <h2 class="fw-normal text-style-ubuntu">Passies, inspiraties, drijfveren</h2>
             <p>Ik ben een actief persoon die houdt van sporten met een bewondering voor het creëren van interessanten of mooie dingen, onder andere Websites. Later in mijn carrière zou ik websites zoals deze willen kunnen maken.</p>
-            <a class="btn btn-secondary" href="https://p5aholic.me/projects/" target="_blank"> Keita Yamada &raquo;</a>  
-            <a class="btn btn-secondary" href="https://www.thecraftsmen.tech/" target="_blank"> Craftsmen &raquo;</a> 
-            <a class="btn btn-secondary" href="https://bruno-simon.com/" target="_blank">bruno-simon &raquo;</a></p>
             </p>
+            <div class="container">
+              <a class="btn btn-outline-warning  px-4" href="https://p5aholic.me/projects/" target="_blank"> Keita Yamada</a>  
+              <a class="btn btn-outline-warning  px-4" href="https://www.thecraftsmen.tech/" target="_blank"> Craftsmen</a>
+              <a class="btn btn-outline-warning  px-4" href="https://bruno-simon.com/" target="_blank">bruno-simon</a></p>
+            </div>
           </div>
-         
         </div>
     
     
@@ -147,32 +156,29 @@
       <h2 class="fw-normal py-5 text-style-ubuntu">Wat heb ik gebruikt voor deze site?</h2>
       <div class="row">
 
-        <div class="col-lg-4">
+        <div class="py-5 col-lg-4">
           <img src="../PNG/css3-logo.png" alt="html5-logo" class="img-fluid img-responsive-small">
-          <h2 class="fw-normal">Css</h2>
+          <h2 class="fw-normal">CSS</h2>
           <p>Deze website is gemaakt met behulp van <a href="https://getbootstrap.com/">Bootstrap 5.3</a>, <a href="https://fonts.google.com/">Google Fonts</a> en wat eigen CSS. Het resultaat is een consistent en goed functionerende site.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
 
-        <div class="col-lg-4">
+        <div class="py-5 col-lg-4">
           <img src="../PNG/html5-logo.png" alt="html5-logo" class="img-fluid img-responsive-small">
-          <h2 class="fw-normal">Html</h2>
-          <p>Ik heb hier niet veel specials meegedaan, maar als je de code wilt bekijken of gebruiken kan je hieronder clicken om de source code van de site te downloaden</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          <h2 class="fw-normal">HTML</h2>
+          <p>Ik heb hier niet veel specials meegedaan, maar als je de code wilt bekijken of gebruiken kan je hieronder clicken om de source code van de site te downloaden.</p>
 
             <!--Download Button (Aan het einde van dit project moet je hem in een zip doen en hem als downloadable maken)-->
             <form method="get" action="file.doc">
-            <button class="btn btn-secondary" type="submit">Download!</button>
+            <button class="btn btn-info" type="submit">Download!</button>
             </form>
             <!--Download Button-->
 
         </div><!-- /.col-lg-4 -->
 
-        <div class="col-lg-4">
+        <div class="py-5 col-lg-4">
           <img src="../PNG/Javascript-Logo-edited.png" alt="html5-logo" class="img-fluid img-responsive-medium-small">
           <h2 class="fw-normal">JavaScript</h2>
           <p>Voor deze site is niet veel Js gebruikt. Ik hoop dat ik in de toekomst hier zelf meer mee kan doen.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
 
       </div><!-- /.row -->
@@ -187,11 +193,10 @@
       
           <ul class="nav col-md-4 justify-content-end">
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Projects</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i class="bi bi-envelope-at"></i></a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"><i class="bi bi-linkedin"></i></a></li>
+            <li class="nav-item"><a href="projects.html" class="nav-link px-2 text-body-secondary">Projects</a></li>
+            <li class="nav-item"><a href="AboutMe.html" class="nav-link px-2 text-body-secondary">About</a></li>
+            <li class="nav-item"><a href="Contact.html" class="nav-link px-2 text-body-secondary">Contact</a></li>
+            <li class="nav-item"><a href="https://www.linkedin.com/in/lars-van-holland-754a7b269/" class="nav-link px-2 text-body-secondary"><i class="bi bi-linkedin"></i></a></li>
           </ul>
         </footer>
       </div>
