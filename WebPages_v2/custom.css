@@ -46,7 +46,9 @@ body::-webkit-scrollbar-thumb:hover {
     height: auto;
   }
 
-
+  .img-hover:hover{
+    transform: scale(1.05);
+  }
 
 
 
