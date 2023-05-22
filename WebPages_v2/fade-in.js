@@ -32,16 +32,11 @@ function getThreshold() {
     }
 }
 
-// Add event listener to update the thresholds when the screen is resized
-window.addEventListener('resize', () => {
-    observer1.disconnect(); // Disconnect observer1 before updating the threshold
-    observer1.thresholds = [getThreshold()]; // Update the threshold for observer1
-    hiddenElements1.forEach((el) => observer1.observe(el)); // Re-observe elements for observer1
+// Add event listener to update the thresholds when the screen is resized ... Dit werk nog niet goed
 
-    observer2.disconnect(); // Disconnect observer2 before updating the threshold
-    observer2.thresholds = [getThreshold()]; // Update the threshold for observer2
-    hiddenElements2.forEach((el) => observer2.observe(el)); // Re-observe elements for observer2
-});
+/*
+
+*/
 
 
 // https://www.youtube.com/watch?v=T33NN_pPeNI&t=30s is de gebruikt om deze javascript te maken
