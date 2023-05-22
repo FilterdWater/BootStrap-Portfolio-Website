@@ -25,7 +25,7 @@ hiddenElements2.forEach((el) => observer2.observe(el));
 // Helper function to determine the threshold based on screen size
 function getThreshold() {
     const screenWidth = window.innerWidth;
-    if (screenWidth < 1920) {
+    if (screenWidth < 1760) {
         return 0.1; // Set a lower threshold for smaller screens
     } else {
         return 0.5; // Default threshold for larger screens

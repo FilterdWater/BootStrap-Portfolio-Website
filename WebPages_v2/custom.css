@@ -20,7 +20,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 
-.pill-image {
+  .pill-image {
     border-radius: 3em; /* Adjust the value to control the pill shape */
     object-fit: cover;
     width: 13em; /* Adjust the width as desired */
@@ -47,6 +47,16 @@ body::-webkit-scrollbar-thumb:hover {
   
   .img-responsive-medium-small{
     max-width: 7em;
+    height: auto;
+  }
+
+  .img-responsive-medium{
+    max-width: 10em;
+    height: auto;
+  }
+
+  .img-responsive-big{
+    max-width: 25em;
     height: auto;
   }
 
