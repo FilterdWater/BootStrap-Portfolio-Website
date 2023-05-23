@@ -182,44 +182,20 @@ body::-webkit-scrollbar-thumb:hover {
     border-radius: 25px;
   }
 
-  .About-banner {
-    position: relative;
-    overflow: hidden;
-    border-radius: 25px;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  
-  .About-banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('../jpegs/Lars-setup.jpg'); /* Replace with the URL of your GIF image */
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    opacity: 1;
-    z-index: -1;
-    border-radius: 25px;
-  }
 
 
 
 
 
-.hidden-1{
+
+.HiddenElement-1 {
   opacity: 0;
   filter: blur(5px);
-  transform: translateX(-100%); /*Deze komt van de linker kant van het scherm*/
+  transform: translateX(-100%);
   transition: all 1s;
- /* transition-delay: 0.25s;*/
 }
-
-.show-1{
+  
+.SeenElement-1 {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
@@ -228,7 +204,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 
-.hidden-2{
+.HiddenElement-2{
   opacity: 0;
   filter: blur(5px);
   transform: translateX(+100%); /*Deze komt van de rechter kant van het scherm*/
@@ -236,7 +212,7 @@ body::-webkit-scrollbar-thumb:hover {
   /*transition-delay: 0.25s;*/
 }
 
-.show-2{
+.SeenElement-2{
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);

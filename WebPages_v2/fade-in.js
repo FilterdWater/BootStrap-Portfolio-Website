@@ -1,26 +1,27 @@
 const observer1 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('show-1');
+            entry.target.classList.add('SeenElement-1');
             observer1.unobserve(entry.target);
         }
     });
 }, { threshold: getThreshold() });
 
-const hiddenElements1 = document.querySelectorAll('.hidden-1');
-hiddenElements1.forEach((el) => observer1.observe(el));
+const hiddenElements1 = document.querySelectorAll('.HiddenElement-1');
+hiddenElements1.forEach((hiddenElements1) => observer1.observe(hiddenElements1));
+
 
 const observer2 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('show-2');
+            entry.target.classList.add('SeenElement-2');
             observer2.unobserve(entry.target);
         }
     });
 }, { threshold: getThreshold() });
 
-const hiddenElements2 = document.querySelectorAll('.hidden-2');
-hiddenElements2.forEach((el) => observer2.observe(el));
+const hiddenElements2 = document.querySelectorAll('.HiddenElement-2');
+hiddenElements2.forEach((hiddenElements2) => observer2.observe(hiddenElements2));
 
 // Helper function to determine the threshold based on screen size
 function getThreshold() {
