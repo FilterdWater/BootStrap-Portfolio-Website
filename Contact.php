@@ -52,15 +52,15 @@
     <h1 class="text-style-ubuntu">Je bevind je op de <i class="text-warning">Contact</i> pagina</h1>
     <p class="lead p-3">Hier kan je me een email sturen</p>
     <p class="lead p-3"></p>
-
-    <div class="p-5 rounded-4 project-banner" style="background-image: url(jpegs/email-i-hope-this-finds-you-well.jpeg);">
+   <div class="p-5 rounded-4 project-banner" style="background-image: url(jpegs/email-i-hope-this-finds-you-well.jpeg);">
         <div class="container-fluid py-5">
         </div>
       </div>
   <!---->    
 
+  <hr class="featurette-divider">
 
-
+  <a class="btn btn-warning p-3" href="mailto:info@larsvanholland.com?subject=Ik zag je bootstrap site en vond hem ... &body=Gegroet mijn naam is [naam]"><i class="bi bi-arrow-right"></i> Stuur me een e-mail <i class="bi bi-arrow-left"></i></a> 
   
 
 
